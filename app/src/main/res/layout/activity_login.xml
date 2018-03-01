@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.myapplication.LoginActivity"
+    android:background="@drawable/tamagochi22">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"
+            android:layout_weight="1"
+            android:text="USUARIO"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/edusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edpassword"
+            android:layout_alignStart="@+id/edpassword"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edusuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="CONTRASEÑA"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="26dp"
+            android:onClick="registrarusuario"
+            app:srcCompat="@drawable/adduser" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edpassword"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/edpassword"
+            android:layout_marginBottom="30dp"
+            android:onClick="logear"
+            android:text="@android:string/ok" />
+
+    </RelativeLayout>
+
+</LinearLayout>
